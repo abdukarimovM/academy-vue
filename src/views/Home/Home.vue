@@ -116,8 +116,8 @@ const DECREMENT_PAGE = () => {
           <i class="bx bxs-left-arrow text-lg cursor-pointer" @click="DECREMENT_PAGE"></i>
           <span
             v-for="el in Math.ceil(teachersStore.GET_TEACHERS.length / pagination.itemsPerPage)"
-            class="text-lg text-main-color p-1 px-3.5 rounded-full border-2 border-main-color cursor-pointer hover:bg-main-color hover:text-white duration-200"
-            :class="pagination.currentPage == el ? 'bg-main-color text-white' : ''"
+            class="text-lg text-main-color p-1 px-3.5 rounded-full border-2 border-main-color cursor-pointer hover:bg-main-color"
+            :class="pagination.currentPage == el ? 'bg-main-color text-black-800' : ''"
             @click="() => (pagination.currentPage = el)"
             >{{ el }}</span
           >
